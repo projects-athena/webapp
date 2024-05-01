@@ -15,13 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ptbr">
-        <body>
+      <body className="bg-black">
         <Header />
-          <main className="pt-16">
-            {children}
-          </main>
-          <Footer />    
-        </body>
+        <main className="pt-16">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
